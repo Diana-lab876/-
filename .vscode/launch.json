@@ -6,6 +6,97 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch second",
+            "request": "launch",
+            "mainClass": "second_level.second",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Quiz",
+            "request": "launch",
+            "mainClass": "first_level.Quiz",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ten",
+            "request": "launch",
+            "mainClass": "first_level.ten",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch nine",
+            "request": "launch",
+            "mainClass": "first_level.nine",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch eight",
+            "request": "launch",
+            "mainClass": "first_level.eight",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Challenge",
+            "request": "launch",
+            "mainClass": "first_level.Challenge",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch six",
+            "request": "launch",
+            "mainClass": "first_level.six",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch five",
+            "request": "launch",
+            "mainClass": "first_level.five",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch four",
+            "request": "launch",
+            "mainClass": "first_level.four",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch football",
+            "request": "launch",
+            "mainClass": "first_level.football",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch basketbol",
+            "request": "launch",
+            "mainClass": "first_level.basketbol",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch time",
+            "request": "launch",
+            "mainClass": "first_level.time",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Primes",
+            "request": "launch",
+            "mainClass": "one_lab.Primes",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
             "name": "Launch Palindrome",
             "request": "launch",
             "mainClass": "one_lab.Palindrome",
