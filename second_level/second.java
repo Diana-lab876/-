@@ -2,7 +2,7 @@ package second_level;
 
 public class second {
     public static void main(String[] args){
-        System.out.println(oppositeHouse(3, 5)); //1
+        //System.out.println(oppositeHouse(3, 5)); //1
         //System.out.println(nameShuffle("Donald Trump")); //2
         //System.out.println(discount(89.0, 20)); //3
         //int[] a = {1, 2, 3, 4, 5}; //4
@@ -10,32 +10,28 @@ public class second {
         //System.out.println(equal(3, 4, 1)); //5
         //System.out.println(reverse("Hello World"));//6
         //System.out.println(programmers(1, 5, 9));//7
-        //System.out.println(getXO("ooxXm"));//8
+        //System.out.println(getXO("xoX"));//8
         //System.out.println(bomb("This goes boom!!!"));//9
         //System.out.println(sameAscii("EdAbIt", "EDABIT"));//10
     }
     public static int oppositeHouse(int a, int b){
-        b=b*2;
-        int c = b+1;
-        int k =c-a;
-        return k;
+        return (((b*2)+1)-a);
 
     }
     public static String nameShuffle(String name){
-        String[] words = name.split(" ");
-        name = words[0];
-        words[0] = words[words.length-1];//запоминаем первое слово, заместо него ставим второе
-        words[words.length-1] = name;// в последнее слово, которое запомнили
-        String words2="";
-        for (String word : words) {
-        words2 = words2 + word + " "; 
+        int j=0;
+        for (int i=0; i<name.length(); i++){
+            if (name.charAt(i)==' '){
+                j=i;
+                break;
+            }
         }
-        return (words2); 
+        String names= name.substring(0, j);
+        String subnames=names.substring(j+1, name.length());
+        return (subnames+ ' ' + names);
     }
     public static double discount(Double a, int b){
-        double result = ((100-b)*a)/100;
-        System.out.println();
-        return result;
+        return (((100-b)*a)/100);
     }
     public static int differenceMaxMin(int[] a){
         int max=a[0], min=a[0];
@@ -111,29 +107,21 @@ public class second {
                 }
             }
         }
-        int result = max-min;
-        return result;
+        return (max-min);
     }
     public static boolean getXO(String a){
-        boolean result=true;
-        String line = a.toUpperCase();
-        String [] lines = line.split(" ");
-        String x ="x";
-        String o ="o";
-        int count =0;
-        int two =0;
-        for(int i = 0; i < lines.length; i++){
-            if(x.equals(lines[i])){
-                count = count+1;
+        int x =0;
+        int o =0;
+        String a1 = a.toLowerCase();
+        for (int i=0; i<a1.length(); i++){
+            if (a1.charAt(i) == 'x'){
+                x++;
             }
-            if(o.equals(lines[i])){
-                two=two+1;
+            if (a1.charAt(i) == 'o'){
+                o++;
             }
         }
-        if (two!=count){
-            result=false;
-        }
-        return result;
+        return(x==o); 
     }
     public static String bomb(String a){
         String line = a.toLowerCase();
@@ -147,24 +135,14 @@ public class second {
         return b;
     }
     public static boolean sameAscii(String a, String b){
-        String [] lines = a.split("");
-        int ascii=0;
-        char a2;
-        for (int i=0; i<lines.length; i++){
-        a2=a.charAt(i);
-        ascii = (int)a2+ascii;
+        int ascii_1=0;
+        int ascii_2=0;
+        for (int i=0; i<a.length(); i++){
+        ascii_1 += (int)a.charAt(i);
         }
-        String [] lines2 = b.split("");
-        int ascii2=0;
-        char b2;
-        for (int i=0; i<lines2.length; i++){
-        b2=b.charAt(i);
-        ascii2=(int) b2+ascii2;
+        for (int i=0; i<b.length(); i++){
+        ascii_2 +=(int)b.charAt(i);
         }
-        boolean result = true;
-        if (ascii!=ascii2){
-            result=false;
-        }
-        return result;
+        return (ascii_1==ascii_2);
     }
 }

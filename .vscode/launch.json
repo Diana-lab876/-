@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch FractalExplorer",
+            "request": "launch",
+            "mainClass": "five_lab.FractalExplorer",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch FractalExplorer",
+            "request": "launch",
+            "mainClass": "four_lab.FractalExplorer",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch AStarApp",
+            "request": "launch",
+            "mainClass": "three_lab.AStarApp",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch fourth",
+            "request": "launch",
+            "mainClass": "four_level.fourth",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab1",
+            "request": "launch",
+            "mainClass": "two_lab.Lab1",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch third",
+            "request": "launch",
+            "mainClass": "three_level.third",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
             "name": "Launch second",
             "request": "launch",
             "mainClass": "second_level.second",

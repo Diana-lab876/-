@@ -1,9 +1,9 @@
 package first_level;
 public class time {
     public static void main(String[] args) {
-        System.out.println(convert(5));
+        //System.out.println(convert(5));
         //System.out.println(points(38,8));
-        //System.out.println(footballPoints(3, 4, 2));
+        System.out.println(footballPoints(3, 4, 2));
         //System.out.println(divisibleByFive(5));
         //System.out.println(and(true, false));
         //System.out.println(howManyWalls(54, 1, 43));
@@ -16,48 +16,32 @@ public class time {
             /*Напишите функцию, которая принимает целое число минут и преобразует его в
             секунды.
             */
-            int seconds = 60*a ;
-            return seconds;
-    }
+            return (60*a);
+        }
     public static int points(int a, int b) {
         /*Вы подсчитываете очки за баскетбольный матч, учитывая количество забитых 2-х
         и 3-х очков, находите окончательные очки для команды и возвращаете это
         значение.
         */
-        int two = a*2;
-        int three = b*3;
-        int sum = two+three;
-        return sum;
+        return (a*2+b*3);
     }
     public static int footballPoints(int a, int b, int c ){
         /*Создайте функцию, которая принимает количество побед, ничьих и поражений и
         вычисляет количество очков, набранных футбольной командой на данный момент. 
         */
-       int victory = a*3;
-       int draw = b*1;
-       int defeat = c*0;
-       int sum = victory+draw+defeat;
-       return sum;
+       return (a*3+b);
     }
     public static boolean  divisibleByFive(int a){
         /*Создайте функцию, которая возвращает true, если целое число равномерно делится
         на 5, и false в противном случае.
         */
-        boolean b;
-        if (a%5==0){
-            b=true;
-        }
-        else {
-            b=false;
-        }
-        return b;
+        return (a%5 ==0);
     }
     public static boolean and(boolean a, boolean b){
         /*В Java есть логический оператор &&. Оператор && принимает два логических
         значения и возвращает true, если оба значения истинны.
         */
-        boolean c = a&&b;
-        return c;
+        return (a&&b);
     }
     public static int howManyWalls(int n, int w, int h){
         /*У меня есть ведро с большим количеством темно-синей краски, и я хотел бы
@@ -65,8 +49,7 @@ public class time {
         количество полных стен, которые я могу покрасить, прежде чем мне нужно будет
         отправиться в магазины, чтобы купить еще.
         */
-        int result = n/(w*h);
-        return result;
+        return (n/(w*h));
     }
     public static int squared(int b){
         /*Исправьте код, чтобы решить эту задачу (только синтаксические ошибки).
@@ -79,21 +62,13 @@ public class time {
         /*Создайте функцию, которая принимает три аргумента prob, prize, pay и возвращает
         true, если prob * prize > pay; в противном случае возвращает false.
         */
-        boolean profit;
-        if (prob * prize > pay) {
-            profit = true;
-        }
-        else {
-            profit = false;
-        }
-        return profit;
+        return (prob * prize > pay);
     }
     public static int frames(int minuts, int FPS){
         /*Создайте метод, который возвращает количество кадров, показанных за заданное
         количество минут для определенного FPS.
         */
-        int personnel = 60*minuts*FPS; 
-        return personnel;
+        return (60*minuts*FPS);
     }
     public static int mod(int a, int b){
         /*Создайте функцию, которая будет работать как оператор модуля % без
@@ -101,8 +76,9 @@ public class time {
         остатка операции деления. Вместо того чтобы возвращать результат деления,
         операция по модулю возвращает остаток целого числа.
         */
-        int c = a/b; //целая часть от деления
-        int answer = a-(b*c); //ищем остаток
-        return answer;
+        while (a>=b){
+            a-=b;
+        }
+        return a;
     }
 }
