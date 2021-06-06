@@ -1,0 +1,18 @@
+{
+    "java.project.sourcePaths": [
+        "two_lab",
+        "three_level",
+        "three_lab",
+        "six_level",
+        "six_lab",
+        "seven_lab",
+        "second_level",
+        "one_lab",
+        "four_level",
+        "four_lab",
+        "five_level",
+        "five_lab",
+        "first_level",
+        "eigth_lab"
+    ]
+}

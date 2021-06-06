@@ -1,4 +1,4 @@
-package three_lab;
+//package three_lab;
 
 public class Location {
     /** X coordinate of this location. **/

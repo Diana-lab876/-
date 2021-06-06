@@ -1,4 +1,4 @@
-package four_lab;
+//package four_lab;
 import java.awt.geom.*;
 public class Mandelbrot extends FractalGenerator {
 

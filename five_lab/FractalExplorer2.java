@@ -1,4 +1,4 @@
-package five_lab;
+//package five_lab;
 
 import java.awt.*;
 import javax.swing.*;
@@ -11,7 +11,7 @@ import java.awt.image.*;
 import java.io.*;
 import javax.swing.filechooser.FileFilter;
 
-public class FractalExplorer {
+public class FractalExplorer2 {
     private int windowSize;
     private JImageDisplay imgDisplay;
     private FractalGenerator fracGenerate;
@@ -21,7 +21,7 @@ public class FractalExplorer {
     private JButton saveButton;
     private JComboBox comboBox;
 
-    public FractalExplorer(int size){
+    public FractalExplorer2(int size){
         windowSize = size;
         fracGenerate = new Mandelbrot();
         range = new Rectangle2D.Double();
@@ -132,7 +132,6 @@ public class FractalExplorer {
                 int userchoise = fileChooser.showSaveDialog(imgDisplay);
                 if (userchoise == JFileChooser.APPROVE_OPTION){
                     File dir = fileChooser.getSelectedFile();
-                    String dir_name = dir.toString();
 
                     try {
                         BufferedImage displayImage = imgDisplay.getImage();
@@ -159,7 +158,7 @@ public class FractalExplorer {
 	}
     public static void main(String[] args)
     {
-        FractalExplorer displayExplorer = new FractalExplorer(600);
+        FractalExplorer2 displayExplorer = new FractalExplorer2(600);
         displayExplorer.createAndShowGUI();
         displayExplorer.drawFractal();
     }

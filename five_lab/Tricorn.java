@@ -1,4 +1,4 @@
-package five_lab;
+//package five_lab;
 import java.awt.geom.*;
 
 public class Tricorn extends FractalGenerator{

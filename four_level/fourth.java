@@ -1,6 +1,8 @@
-package four_level;
+//package four_level;
 import java.util.Arrays;
 import java.lang.Math;
+import java.util.*;
+
 public class fourth {
     public static void main(String[] args){
         //int[] a = {2, 55, 60, 97, 86};
@@ -12,10 +14,10 @@ public class fourth {
         //System.out.println(xPronounce("The x ray is excellent"));
         //int[] arr={14, 13, 7, 1, 4, 12, 3, 7, 7, 12, 11, 5, 7};
         // System.out.println(largestGap(arr));
-        System.out.println(reversUp(7977));
-        System.out.println(commonLastVowel("hello worlda"));
+        //System.out.println(reversUp(7977));
+        //System.out.println(commonLastVowel("hello worlda"));
         //System.out.println(memeSum(26, 46));
-        //System.out.println(unrepeated("tctctctysiyd!!!!"));
+        System.out.println(unrepeated("tctctctysiyd!!!!"));
     }
     /** Создайте функцию, которая принимает массив чисел и возвращает "Бум!", если в
      * массиве появляется цифра 7. В противном случае верните "в массиве нет 7". */
@@ -125,15 +127,27 @@ public class fourth {
          * ниже производит показанные примеры выходных данных. */
         public static int reversUp(int a){
             int result =0;
-            StringBuilder at = new StringBuilder(Integer.toString(a)).reverse();
-            if (a>Integer.parseInt(at.toString())){
-                //Метод parseInt() - преобразует строку в число
-                result = a-Integer.parseInt(at.toString());
-            }
-            else
-            result = 0;
-            return result;
+            int start=a;
+            String c = Integer.toString(a);
+            int[] arr = new int[c.length()];
+            for (int i = c.length() - 1; i >= 0; i--) {
+            arr[i] = a % 10;
+            a /= 10;
         }
+        Arrays.sort(arr);
+        int l=0;
+        int ten =1;
+        for (int j=arr.length-1; j>=0; j--){
+            l=l+arr[j]*ten;
+            ten*=10;
+        }
+        result = start-l;
+        return result;
+        }
+
+
+        /* Создайте функцию, которая принимает предложение в качестве входных данных и возвращает 
+        наиболее распространенную последнюю гласную в предложении в виде одной символьной строки.  */
        public static String commonLastVowel(String at){
            int o =0; 
            int e =0;
@@ -200,16 +214,25 @@ public class fourth {
            }
            return result;
         }
-        public static String memeSum(int a, int b){
-            String result = "";
-            int maxlen = (int)Math.log10(Math.max(a, b));
-            for (int i=0; i<=maxlen; i++){
-                result += Integer.toString(a/(int)Math.pow(10, maxlen-i)+(int)b/(int)Math.pow(10, maxlen-i));
-                a%=(int)Math.pow(10, maxlen-i);
-                b%=(int)Math.pow(10, maxlen-i);
+
+        /* Для этой задачи забудьте, как сложить два числа вместе. Лучшее объяснение того, 
+        что нужно сделать для этой функции, - это этот мем:  */
+        public static int memeSum (int a, int b){
+            StringBuilder result = new StringBuilder();
+            while (a % 10 != 0 || b % 10 != 0) {
+                int c = a % 10 + b % 10;
+                result.insert(0, c);
+                a/=10;
+                b/=10;
             }
-            return result;
+            return(Integer.parseInt(result.toString()));
         }
+    
+
+
+       /*  Создайте функцию, которая удалит все повторяющиеся символы в слове, 
+       переданном этой функции. Не просто последовательные символы, а символы, 
+       повторяющиеся в любом месте строки.  */
         public static String unrepeated(String a) {
             String result = "";
             for (int i=0; i<a.length(); i++){

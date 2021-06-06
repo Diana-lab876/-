@@ -1,4 +1,4 @@
-package four_lab;
+//package four_lab;
 import javax.swing.*;
 import java.awt.image.*;
 import java.awt.*;

@@ -1,4 +1,4 @@
-package one_lab;
+//package one_lab;
 import java.util.Scanner;
 public class Palindrome {
     public static void main(String[] args) {

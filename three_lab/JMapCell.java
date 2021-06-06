@@ -1,4 +1,4 @@
-package three_lab;
+//package three_lab;
 import java.awt.*;
 import javax.swing.*;
 import javax.swing.border.*;

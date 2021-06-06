@@ -1,4 +1,4 @@
-package three_lab;
+//package three_lab;
 
 public class Map2D {
      /** The width of the map. **/

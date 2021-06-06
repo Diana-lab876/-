@@ -1,11 +1,11 @@
-package four_lab;
+//package four_lab;
 
 import java.awt.*;
 import javax.swing.*;
 import java.awt.geom.Rectangle2D;
 import java.awt.event.*;
 
-public class FractalExplorer {
+public class FractalExplorer1 {
     private int windowSize;
     private JImageDisplay imgDisplay;
     private FractalGenerator fracGenerate;
@@ -13,7 +13,7 @@ public class FractalExplorer {
 
     private JButton resetButton;
 
-    public FractalExplorer(int size){
+    public FractalExplorer1(int size){
         windowSize = size;
         fracGenerate = new Mandelbrot();
         range = new Rectangle2D.Double();
@@ -87,7 +87,7 @@ public class FractalExplorer {
 	}
     public static void main(String[] args)
     {
-        FractalExplorer displayExplorer = new FractalExplorer(600);
+        FractalExplorer1 displayExplorer = new FractalExplorer1(600);
         displayExplorer.createAndShowGUI();
         displayExplorer.drawFractal();
     }

@@ -6,6 +6,90 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Crawler2",
+            "request": "launch",
+            "mainClass": "Crawler2",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Crawlers",
+            "request": "launch",
+            "mainClass": "Crawlers",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Crawler",
+            "request": "launch",
+            "mainClass": "Crawler",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch six_level",
+            "request": "launch",
+            "mainClass": "six_level",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch five_level",
+            "request": "launch",
+            "mainClass": "five_level",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch fourth",
+            "request": "launch",
+            "mainClass": "fourth",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch FractalExplorer3",
+            "request": "launch",
+            "mainClass": "FractalExplorer3",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch FractalExplorer2",
+            "request": "launch",
+            "mainClass": "FractalExplorer2",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch FractalExplorer1",
+            "request": "launch",
+            "mainClass": "FractalExplorer1",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch AStarApp",
+            "request": "launch",
+            "mainClass": "AStarApp",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab1",
+            "request": "launch",
+            "mainClass": "Lab1",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
+            "name": "Launch FractalExplorer",
+            "request": "launch",
+            "mainClass": "FractalExplorer",
+            "projectName": "java_72e8cc1b"
+        },
+        {
+            "type": "java",
             "name": "Launch FractalExplorer",
             "request": "launch",
             "mainClass": "five_lab.FractalExplorer",

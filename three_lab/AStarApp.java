@@ -1,4 +1,4 @@
-package three_lab;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;

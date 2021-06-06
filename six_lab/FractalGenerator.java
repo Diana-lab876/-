@@ -1,4 +1,3 @@
-//package four_lab;
 import java.awt.geom.Rectangle2D;
 
 
@@ -67,4 +66,3 @@ public abstract class FractalGenerator {
      */
     public abstract int numIterations(double x, double y);
 }
-

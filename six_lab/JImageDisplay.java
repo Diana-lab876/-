@@ -1,5 +1,3 @@
-//package five_lab;
-
 import javax.swing.*;
 import java.awt.image.*;
 import java.awt.*;
@@ -31,4 +29,3 @@ class JImageDisplay extends JComponent{
         myImage.setRGB(x, y, rgbColor);
     }
 }
-

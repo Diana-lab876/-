@@ -1,4 +1,4 @@
-package first_level;
+//package first_level;
 import java.util.Scanner;
 public class six {
     public static void main(String[] args) {

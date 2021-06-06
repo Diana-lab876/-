@@ -1,4 +1,4 @@
-package three_lab;
+//package three_lab;
 
 public class Waypoint {
     /** The location of this waypoint. **/
